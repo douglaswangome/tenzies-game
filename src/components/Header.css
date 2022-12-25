@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.header {
+  background-color: #CD5C5C;
+  color: #FFFFFF;
+  font-family: 'Courgette';
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+}

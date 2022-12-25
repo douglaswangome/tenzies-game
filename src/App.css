@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.app {
+  padding: 1vh 1vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app .form {
+  width: 40%;
+  margin-inline: auto;
+  margin-block: 2vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app .form fieldset {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: .4vh .4vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app .form fieldset legend {
+  margin-left: .25vw;
+}
+
+.app .form fieldset div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1vh 1vw;
+  margin-block: .5vh;
 }
 
-.App-link {
-  color: #61dafb;
+.app .form fieldset div label {
+  margin-left: .5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app .form button {
+  background-color: #CD5C5C;
+  color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  margin-block: 1vh;
+  padding: 1vh 1vw;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .app .form {
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .app .form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .app .form {
+    width: 94%;
   }
 }

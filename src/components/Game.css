@@ -1,0 +1,88 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-inline: auto;
+}
+
+.game .dices {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vh 1vw;
+  margin-inline: auto;
+  padding: 1vh 0;
+}
+
+.game .buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.game .buttons button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  margin-block: 1vh;
+  padding: 1vh 1vw;
+  width: 40%;
+  cursor: pointer;
+}
+
+.game .buttons button:first-child {
+  border: 1px solid #CD5C5C;
+  color: #CD5C5C;
+}
+
+.game .buttons button:last-child {
+  background-color: #CD5C5C;
+  color: #FFFFFF;
+}
+
+.game .win {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game .win span:first-child {
+  font-size: 18px;
+  margin-block: 2vh;
+}
+
+.game .win button {
+  background-color: transparent;
+  color: #CD5C5C;
+  border: 1px solid #CD5C5C;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-block: 1vh;
+  padding: 1vh 1vw;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .game {
+    width: 60%;
+  }
+  
+  .game .dices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .game {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .game {
+    width: 90%;
+  }
+}
